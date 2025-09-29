@@ -345,20 +345,20 @@ Julien Boelaert - Paul Girard - Étienne Ollion - <strong>Émilien Schultz</stro
 <h2>Text as data in computational social sciences</h2>
 <ul>
 <li>Explosion of text content (social media, news, scientific publications …)</li>
-<li>Profiferation of NLP methodologies both CSS &amp; DH and beyond</li>
+<li>Proliferation of NLP methodologies both in CSS &amp; DH and beyond</li>
 </ul>
 <center>
 <p><a href="https://www.ic2s2-2025.org/program/">Example from IC2S2 2025</a></p>
 </center>
 
 <img data-src="./img/ic2s2.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="bert-llm-and-new-methods" class="slide level2">
-<h2>BERT, LLM and new methods</h2>
+<section id="bert-gpt-and-new-methods" class="slide level2">
+<h2>BERT, GPT and new methods</h2>
 <p>Rapid adoption of model-based treatments</p>
 <ul>
-<li>Encoders with BERT (2017)</li>
+<li>Encoders with BERT (2018)</li>
 <li>Decoders with GPT</li>
-<li>Explosion of closed &amp; open models</li>
+<li>Proliferation of closed &amp; open models</li>
 </ul>
 <p>Consequences :</p>
 <ul>
@@ -366,12 +366,12 @@ Julien Boelaert - Paul Girard - Étienne Ollion - <strong>Émilien Schultz</stro
 <li>dependency to specific ressources (coding skills, GPU)</li>
 </ul>
 </section>
-<section id="some-examples-of-uses" class="slide level2">
-<h2>Some examples of uses</h2>
+<section id="some-use-cases" class="slide level2">
+<h2>Some use cases</h2>
 <ul>
-<li>What are the stance of opinions on global warming ? <sup>1</sup></li>
-<li>Do French social science journals speak much of of gender ? <sup>2</sup></li>
-<li>What are the circumstances of transmission of an emerging infectious disease from survey free text answers ? <sup>3</sup></li>
+<li>What are the stances on public opinion on global warming ? <sup>1</sup></li>
+<li>What is the prevalence of gender-based analyzes in the French Social Sciences? <sup>2</sup></li>
+<li>What are the circumstances of transmission of an emerging infectious disease from survey open answers ? <sup>3</sup></li>
 </ul>
 <aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://doi.org/10.48550/arXiv.2010.15149">Luo, Yiwei, Dallas Card, et Dan Jurafsky. «&nbsp;Detecting Stance in Media on Global Warming&nbsp;». arXiv:2010.15149. arXiv, 16 janvier 2021.</a></p></li><li id="fn2"><p><a href="https://doi.org/10.3917/arss.258.0126">Boelaert, Julien, Samuel Coavoux, Estelle Delaine, et al.&nbsp;«&nbsp;La part du genre: Genre et approche intersectionnelle dans les revues de sciences sociales françaises au XXI e siècle&nbsp;». Actes de la recherche en sciences sociales N° 258-259, nᵒˢ 3‑4 (2025): 126‑45.</a></p></li><li id="fn3"><p><a href="https://doi.org/10.2139/ssrn.4819301">Bizel-Bizellot, Gaston, Simon Galmiche, Tiffany Charmet, Laurent Coudeville, Arnaud Fontanet, et Christophe Zimmer. «&nbsp;Extracting Circumstances of COVID-19 Transmission from Free Text with Large Language Models&nbsp;». Prépublication, SSRN, 2024.</a></p></li></ol></aside></section>
 <section id="annotate-50000-abstracts-on-concepts" class="slide level2">
@@ -380,7 +380,7 @@ Julien Boelaert - Paul Girard - Étienne Ollion - <strong>Émilien Schultz</stro
 <img data-src="./img/partdugenre.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="landscape-of-annotation-tools" class="slide level2">
 <h2>Landscape of annotation tools</h2>
-<p>A lot of tools<sup>1</sup> (Doccano, Label studio, Argil, Inception, …)</p>
+<p>Lots of tools<sup>1</sup> (Doccano, Label studio, Argil, Inception, …)</p>
 <ul>
 <li>Primarily designed for computer science/ML</li>
 <li>Designed for tasks rare in social sciences</li>
@@ -395,6 +395,7 @@ Julien Boelaert - Paul Girard - Étienne Ollion - <strong>Émilien Schultz</stro
 <li>Encoders models (BERT) are powerful for text classification
 <ul>
 <li>Easy to fine-tune</li>
+<li>SOTA</li>
 </ul></li>
 <li>Active Learning allows to accelerate annotation</li>
 </ul>
@@ -415,10 +416,7 @@ Julien Boelaert - Paul Girard - Étienne Ollion - <strong>Émilien Schultz</stro
 <section id="architecture" class="slide level2">
 <h2>Architecture</h2>
 <ul>
-<li>API (Python) / Frontend (React) / Client (Python)
-<ul>
-<li><em>With the support of <a href="https://www.ouestware.com/">Paul Girard@Ouestware</a></em></li>
-</ul></li>
+<li>API (Python) / Frontend (React) / API Client (Python)</li>
 <li>Leverage Python ML/DL packages (sklearn, transformers, …)</li>
 <li>UX designed for non-expert users
 <ul>
@@ -427,12 +425,12 @@ Julien Boelaert - Paul Girard - Étienne Ollion - <strong>Émilien Schultz</stro
 <li>Both on premise and software as a service to adjust the needs</li>
 </ul>
 </section>
-<section id="ok-what-does-it-mean-in-practice" class="slide level2">
-<h2>Ok, what does it mean in practice ?</h2>
+<section id="demonstration-use-case" class="slide level2">
+<h2>Demonstration use-case</h2>
 <ul>
 <li>A lot of scientific publication using Python</li>
-<li>All of them are not “PyData” related</li>
-<li><em>How to sort them (and in the future flag publications)</em></li>
+<li>Only some of them are “PyData” related</li>
+<li><em>How to annotate them PyData/Not Pydata</em></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -462,7 +460,7 @@ Julien Boelaert - Paul Girard - Étienne Ollion - <strong>Émilien Schultz</stro
 <li>In the future
 <ul>
 <li>Animate a community</li>
-<li>Identify needed tasks (Bertopic)</li>
+<li>Prioritize our roadmap (Bertopic)</li>
 </ul></li>
 </ul>
 </section>
@@ -471,7 +469,7 @@ Julien Boelaert - Paul Girard - Étienne Ollion - <strong>Émilien Schultz</stro
 <p><a href="https://www.css.cnrs.fr/active-tigger/">https://www.css.cnrs.fr/active-tigger/</a></p>
 <p><strong>Fundings</strong> : GENES / DRARI / Progedo</p>
 <p><img data-src="img/crest.png" width="100"> <img data-src="img/ministereesr.png" width="100"> <img data-src="img/logo_progedo.svg" width="100"></p>
-<p><strong>Main contributors</strong> : Julien Boaelaert (UL) ; Étienne Ollion (CREST) ; Paul Girard (OuestWare) ; Emma Bonutti (CREST) ; Annina Claesson (CREST) ; Léo Mignot (CED) ; Jule Brion (PACTE) ; Arnault Chatelain (CREST) ; Axel Morin (CREST)</p>
+<p><strong>Main contributors</strong> : Julien Boelaert (UL) ; Étienne Ollion (CREST) ; Paul Girard (OuestWare) ; Emma Bonutti (CREST) ; Annina Claesson (CREST) ; Léo Mignot (CED) ; Jule Brion (PACTE) ; Arnault Chatelain (CREST) ; Axel Morin (CREST)</p>
 <!--
 
 Plan 
