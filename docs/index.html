@@ -12,7 +12,7 @@
 
   <meta name="author" content="Julien Boelaert - Paul Girard - Étienne Ollion - Émilien Schultz CREST/GENES">
   <meta name="dcterms.date" content="2025-09-30">
-  <title>ActiveTigger@PyData</title>
+  <title>ActiveTigger@PyData2025</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,7 +327,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">ActiveTigger@PyData</h1>
+  <h1 class="title">ActiveTigger@PyData2025</h1>
   <p class="subtitle">Collaborative Text Annotation Tool for Computational Social Sciences</p>
 
 <div class="quarto-title-authors">
@@ -341,33 +341,33 @@ Julien Boelaert - Paul Girard - Étienne Ollion - <strong>Émilien Schultz</stro
 
   <p class="date">2025-09-30</p>
 </section>
-<section id="text-as-data-in-computational-social-sciences" class="slide level2">
-<h2>Text as data in computational social sciences</h2>
+<section id="text-as-data-in-social-sciences" class="slide level2">
+<h2>Text as data in social sciences</h2>
 <ul>
-<li>Explosion of text content (social media, news, scientific publications …)</li>
-<li>Proliferation of NLP methodologies both in CSS &amp; DH and beyond</li>
+<li>Explosion of text content (social media, news, …)</li>
+<li>Adoption of NLP methods from CSS &amp; DH</li>
 </ul>
 <center>
 <p><a href="https://www.ic2s2-2025.org/program/">Example from IC2S2 2025</a></p>
 </center>
 
 <img data-src="./img/ic2s2.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="bert-gpt-and-new-methods" class="slide level2">
-<h2>BERT, GPT and new methods</h2>
+<section id="bert-gpt-and-proliferation-of-methods" class="slide level2">
+<h2>BERT, GPT and proliferation of methods</h2>
 <p>Rapid adoption of model-based treatments</p>
 <ul>
 <li>Encoders with BERT (2018)</li>
-<li>Decoders with GPT</li>
+<li>Decoders with GPT (2022)</li>
 <li>Proliferation of closed &amp; open models</li>
 </ul>
 <p>Consequences :</p>
 <ul>
-<li>diversity of new (unstabilized) methods</li>
-<li>dependency to specific ressources (coding skills, GPU)</li>
+<li>diversity of new unstabilized methods</li>
+<li>needs of specific ressources (coding skills, GPU)</li>
 </ul>
 </section>
-<section id="some-use-cases" class="slide level2">
-<h2>Some use cases</h2>
+<section id="for-what-kind-of-uses" class="slide level2">
+<h2>For what kind of uses ?</h2>
 <ul>
 <li>What are the stances on public opinion on global warming ? <sup>1</sup></li>
 <li>What is the prevalence of gender-based analyzes in the French Social Sciences? <sup>2</sup></li>
@@ -378,39 +378,42 @@ Julien Boelaert - Paul Girard - Étienne Ollion - <strong>Émilien Schultz</stro
 <h2>Annotate &gt; 50000 abstracts on concepts</h2>
 
 <img data-src="./img/partdugenre.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="landscape-of-annotation-tools" class="slide level2">
-<h2>Landscape of annotation tools</h2>
+<section id="wide-landscape-of-annotation-tools" class="slide level2">
+<h2>Wide landscape of annotation tools</h2>
 <p>Lots of tools<sup>1</sup> (Doccano, Label studio, Argil, Inception, …)</p>
 <ul>
-<li>Primarily designed for computer science/ML</li>
-<li>Designed for tasks rare in social sciences</li>
+<li>Primarily designed for computer science/ML
+<ul>
+<li>Diversity of tasks</li>
+</ul></li>
+<li>Far from non-expert user xp (social scientists, journalists, …)</li>
 <li>Absence of existing community for social sciences</li>
 </ul>
 <aside><ol class="aside-footnotes"><li id="fn4"><p>Colucci Cante, Luigi, Salvatore D’Angelo, Beniamino Di Martino, et Mariangela Graziano. «&nbsp;Text Annotation Tools: A Comprehensive Review and Comparative Analysis&nbsp;». In Complex, Intelligent and Software Intensive Systems, édité par Leonard Barolli, vol.&nbsp;87. Lecture Notes on Data Engineering and Communications Technologies. Springer Nature Switzerland, 2024. https://doi.org/10.1007/978-3-031-70011-8_33.</p></li></ol></aside></section>
 <section id="the-origins-of-activetigger" class="slide level2">
 <h2>The origins of ActiveTigger 🐯</h2>
-<p>Training classifiers for social sciences</p>
+<p><strong>Training classifiers for social sciences</strong></p>
 <ul>
-<li>Text classification is a frequent task in social sciences</li>
-<li>Encoders models (BERT) are powerful for text classification
+<li>Specific and frequent task : text classification</li>
+<li><strong>Encoders transformers</strong> models (BERT) are powerful
 <ul>
 <li>Easy to fine-tune</li>
 <li>SOTA</li>
 </ul></li>
-<li>Active Learning allows to accelerate annotation</li>
+<li><strong>Active Learning</strong> allows to accelerate annotation</li>
 </ul>
 <p>A first prototype in R Shiny + Python in 2023</p>
-<p>➕ Collaboration ➕ Stability ➕ Features</p>
+<p>Since 2024 : ➕ Collaboration ➕ Stability ➕ Features</p>
 </section>
-<section id="main-goals" class="slide level2">
-<h2>Main goals</h2>
+<section id="main-goals-an-open-source-research-software" class="slide level2">
+<h2>Main goals : an open source research software</h2>
 <ol type="1">
-<li>facilitate classifier training to scale annotations on a large corpus</li>
-<li>possibility to evaluate the classifier and get metrics</li>
-<li>limit dependencies on external services with small models</li>
-<li>pedagogical solution for non-expert users/training</li>
-<li>induce community discussion on best practices</li>
-<li>promote open source &amp; open research tools</li>
+<li>accelerate <strong>classifier training</strong> to scale annotations on a large corpus</li>
+<li>possibility to <strong>evaluate</strong> classifier performance</li>
+<li><strong>limit dependencies</strong> on external services with small models</li>
+<li><strong>pedagogical</strong> solution for non-expert users/training</li>
+<li>stimulate <strong>community discussion</strong> on needs &amp; best practices</li>
+<li>promote <strong>open source</strong> &amp; open research tools</li>
 </ol>
 </section>
 <section id="architecture" class="slide level2">
@@ -425,11 +428,11 @@ Julien Boelaert - Paul Girard - Étienne Ollion - <strong>Émilien Schultz</stro
 <li>Both on premise and software as a service to adjust the needs</li>
 </ul>
 </section>
-<section id="demonstration-use-case" class="slide level2">
-<h2>Demonstration use-case</h2>
+<section id="demo-time" class="slide level2">
+<h2>Demo time</h2>
 <ul>
-<li>A lot of scientific publication using Python</li>
-<li>Only some of them are “PyData” related</li>
+<li>A lot of scientific publication mentionning Python</li>
+<li>Only some of them are PyData-related</li>
 <li><em>How to annotate them PyData/Not Pydata</em></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
@@ -441,8 +444,12 @@ Julien Boelaert - Paul Girard - Étienne Ollion - <strong>Émilien Schultz</stro
 <section id="demo-with-activetigger" class="slide level2">
 <h2>Demo with ActiveTigger</h2>
 <p><em>Dataset openalex filter to remove empty abstracts/duplicates</em></p>
-
-<img data-src="./img/qr-code.png" class="quarto-figure quarto-figure-center r-stretch"><center>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://emilienschultz.github.io/activetigger/"><img data-src="./img/qr-code.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+<center>
 <p>Connect with : pydata2025/pydata2025</p>
 <p><a href="https://www.css.cnrs.fr/active-tigger/">https://www.css.cnrs.fr/active-tigger/</a></p>
 </center>
